@@ -111,33 +111,33 @@
             <input class="gallery-radio sr-only" id="anh-san-pham-2" name="anh-san-pham" type="radio" aria-controls="khung-anh-2">
             <input class="gallery-radio sr-only" id="anh-san-pham-3" name="anh-san-pham" type="radio" aria-controls="khung-anh-3">
             <div class="gallery-frames">
-              <a class="product-gallery__stage gallery-frame gallery-frame--1" id="khung-anh-1" href="assets/ca-phen.png" target="_blank" rel="noopener noreferrer" aria-label="Mở ảnh Bao bì sản phẩm 500g trong thẻ mới">
+              <button class="product-gallery__stage gallery-frame gallery-frame--1" id="khung-anh-1" type="button" popovertarget="xem-anh-1" popovertargetaction="show" aria-label="Xem lớn ảnh Bao bì sản phẩm 500g">
                 <span class="product-gallery__badge">500g / gói</span>
-                <img class="product-gallery__image" src="assets/ca-phen.png" alt="Gói cá phèn Hải Nam fillet còn da 500g, có nhãn trên bao bì" width="1200" height="1200" fetchpriority="high">
+                <img class="gallery-photo gallery-photo--package" src="assets/ca-phen.png" alt="Gói cá phèn Hải Nam fillet còn da 500g, có nhãn trên bao bì" width="1200" height="1200" fetchpriority="high">
                 <span class="product-gallery__expand" aria-hidden="true"><svg class="icon"><use href="#icon-expand"/></svg></span>
-              </a>
-              <a class="product-gallery__stage gallery-frame gallery-frame--2" id="khung-anh-2" href="assets/ca-phen-xien-rau-cu.jpg" target="_blank" rel="noopener noreferrer" aria-label="Mở ảnh Cá phèn xiên rau củ trong thẻ mới">
+              </button>
+              <button class="product-gallery__stage gallery-frame gallery-frame--2" id="khung-anh-2" type="button" popovertarget="xem-anh-2" popovertargetaction="show" aria-label="Xem lớn ảnh Cá phèn xiên rau củ">
                 <span class="product-gallery__badge">Cá phèn xiên rau củ</span>
-                <img class="product-gallery__dish" src="assets/ca-phen-xien-rau-cu.jpg" alt="Cá phèn xiên rau củ, ảnh món ăn từ Hải Nam Foods" width="2560" height="647" loading="lazy">
+                <img class="gallery-photo gallery-photo--skewers" src="assets/ca-phen-xien-rau-cu.jpg" alt="Cá phèn xiên rau củ, ảnh món ăn từ Hải Nam Foods" width="2560" height="647" loading="lazy">
                 <span class="product-gallery__expand" aria-hidden="true"><svg class="icon"><use href="#icon-expand"/></svg></span>
-              </a>
-              <a class="product-gallery__stage gallery-frame gallery-frame--3" id="khung-anh-3" href="assets/ca-phen-nuong.jpg" target="_blank" rel="noopener noreferrer" aria-label="Mở ảnh Cá phèn nướng trong thẻ mới">
+              </button>
+              <button class="product-gallery__stage gallery-frame gallery-frame--3" id="khung-anh-3" type="button" popovertarget="xem-anh-3" popovertargetaction="show" aria-label="Xem lớn ảnh Cá phèn nướng">
                 <span class="product-gallery__badge">Cá phèn nướng</span>
-                <img class="product-gallery__dish" src="assets/ca-phen-nuong.jpg" alt="Cá phèn nướng, ảnh món ăn từ Hải Nam Foods" width="2417" height="1129" loading="lazy">
+                <img class="gallery-photo gallery-photo--grilled" src="assets/ca-phen-nuong.jpg" alt="Cá phèn nướng, ảnh món ăn từ Hải Nam Foods" width="2417" height="1129" loading="lazy">
                 <span class="product-gallery__expand" aria-hidden="true"><svg class="icon"><use href="#icon-expand"/></svg></span>
-              </a>
+              </button>
             </div>
             <div class="gallery-thumbnails" role="group" aria-label="Chọn ảnh sản phẩm hoặc món ăn">
               <label class="gallery-thumbnail" for="anh-san-pham-1" title="Bao bì sản phẩm 500g">
-                <img src="assets/ca-phen.png" alt="" width="1200" height="1200" loading="lazy">
+                <img class="gallery-photo gallery-photo--package" src="assets/ca-phen.png" alt="" width="1200" height="1200" loading="lazy">
                 <span class="sr-only">Ảnh 1: Bao bì sản phẩm 500g</span>
               </label>
               <label class="gallery-thumbnail" for="anh-san-pham-2" title="Cá phèn xiên rau củ">
-                <img src="assets/ca-phen-xien-rau-cu.jpg" alt="" width="2560" height="647" loading="lazy">
+                <img class="gallery-photo gallery-photo--skewers" src="assets/ca-phen-xien-rau-cu.jpg" alt="" width="2560" height="647" loading="lazy">
                 <span class="sr-only">Ảnh 2: Cá phèn xiên rau củ</span>
               </label>
               <label class="gallery-thumbnail" for="anh-san-pham-3" title="Cá phèn nướng">
-                <img src="assets/ca-phen-nuong.jpg" alt="" width="2417" height="1129" loading="lazy">
+                <img class="gallery-photo gallery-photo--grilled" src="assets/ca-phen-nuong.jpg" alt="" width="2417" height="1129" loading="lazy">
                 <span class="sr-only">Ảnh 3: Cá phèn nướng</span>
               </label>
             </div>
@@ -145,9 +145,36 @@
               <span class="gallery-caption gallery-caption--1">Ảnh <strong>1 / 3</strong>: Bao bì sản phẩm 500g</span>
               <span class="gallery-caption gallery-caption--2">Ảnh <strong>2 / 3</strong>: Cá phèn xiên rau củ</span>
               <span class="gallery-caption gallery-caption--3">Ảnh <strong>3 / 3</strong>: Cá phèn nướng</span>
-              <span>Bấm ảnh lớn để xem bản gốc</span>
+              <span>Bấm ảnh để phóng lớn</span>
             </figcaption>
           </figure>
+          <section class="image-viewer" id="xem-anh-1" popover="auto" role="dialog" aria-labelledby="tieu-de-xem-anh-1">
+            <div class="image-viewer__toolbar">
+              <h2 id="tieu-de-xem-anh-1">Bao bì sản phẩm 500g <span>1 / 3</span></h2>
+              <button class="image-viewer__close" type="button" popovertarget="xem-anh-1" popovertargetaction="hide" aria-label="Đóng ảnh phóng lớn"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+            </div>
+            <figure class="image-viewer__photo">
+              <img class="gallery-photo gallery-photo--package" src="assets/ca-phen.png" alt="Gói cá phèn Hải Nam fillet còn da 500g, có nhãn trên bao bì" width="1200" height="1200" loading="lazy">
+            </figure>
+          </section>
+          <section class="image-viewer" id="xem-anh-2" popover="auto" role="dialog" aria-labelledby="tieu-de-xem-anh-2">
+            <div class="image-viewer__toolbar">
+              <h2 id="tieu-de-xem-anh-2">Cá phèn xiên rau củ <span>2 / 3</span></h2>
+              <button class="image-viewer__close" type="button" popovertarget="xem-anh-2" popovertargetaction="hide" aria-label="Đóng ảnh phóng lớn"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+            </div>
+            <figure class="image-viewer__photo">
+              <img class="gallery-photo gallery-photo--skewers" src="assets/ca-phen-xien-rau-cu.jpg" alt="Cá phèn xiên rau củ, ảnh món ăn từ Hải Nam Foods" width="2560" height="647" loading="lazy">
+            </figure>
+          </section>
+          <section class="image-viewer" id="xem-anh-3" popover="auto" role="dialog" aria-labelledby="tieu-de-xem-anh-3">
+            <div class="image-viewer__toolbar">
+              <h2 id="tieu-de-xem-anh-3">Cá phèn nướng <span>3 / 3</span></h2>
+              <button class="image-viewer__close" type="button" popovertarget="xem-anh-3" popovertargetaction="hide" aria-label="Đóng ảnh phóng lớn"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+            </div>
+            <figure class="image-viewer__photo">
+              <img class="gallery-photo gallery-photo--grilled" src="assets/ca-phen-nuong.jpg" alt="Cá phèn nướng, ảnh món ăn từ Hải Nam Foods" width="2417" height="1129" loading="lazy">
+            </figure>
+          </section>
           <div class="product-highlights" aria-label="Thông tin nhanh">
             <span><svg class="icon" aria-hidden="true"><use href="#icon-fish"/></svg>Fillet còn da</span>
             <span><svg class="icon" aria-hidden="true"><use href="#icon-snow"/></svg>Bảo quản −18°C</span>
