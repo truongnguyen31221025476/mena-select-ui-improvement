@@ -74,10 +74,10 @@ Sinh viên yêu cầu giữ header/footer/danh mục, làm rõ VAT và phí vậ
 
 
 ## 4. Kết quả AI đề xuất
-Bản lưu bước 4: Ảnh mở trong popover trên trang; vùng hiển thị được căn bằng CSS; tệp ảnh nguồn giữ nguyên.
+Bản lưu bước 5: Mô tả bắt đầu trực tiếp bằng nội dung sản phẩm; bỏ nhãn phụ và thu gọn khoảng trống.
 
 ## 5. Kiểm tra và điều chỉnh
-Thay liên kết mở ảnh bằng button và popover; căn vùng ảnh, thumbnail và khung phóng lớn; đặt radio trong gallery để hạn chế nhảy vị trí.
+Bỏ dòng Tìm hiểu trước khi chọn và các nhãn dẫn phụ; bỏ tiêu đề trang trí trong mô tả; giảm margin, padding và khoảng cách giữa các khối.
 Đây là bản đã lưu trong quá trình chỉnh sửa. Kết quả kiểm tra của bản hoàn thiện được bổ sung ở lượt cuối; không dùng kết quả đó để khẳng định mọi bản cũ đã đạt.
 
 ## 6. Phần tôi hiểu và có thể giải thích
