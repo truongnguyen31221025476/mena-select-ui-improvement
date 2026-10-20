@@ -1,10 +1,10 @@
 # AI Usage Log
 
 ## 1. Công cụ AI
-Gemini và ChatGPT; chưa ghi nhận phiên bản cụ thể.
+Gemini: hỗ trợ phân tích website. ChatGPT: hỗ trợ thiết kế, tạo/sửa HTML/CSS, kiểm tra và biên tập báo cáo. Không ghi phiên bản mô hình khi chưa có xác nhận.
 
 ## 2. Mục đích sử dụng
-Phân tích giao diện, đề xuất bố cục, giải thích HTML/CSS và hỗ trợ sửa mã theo phản hồi của sinh viên.
+Phân tích giao diện, đề xuất bố cục, giải thích HTML/CSS, sửa lỗi và kiểm tra bản mẫu.
 
 ## 3. Prompt đã sử dụng
 
@@ -72,13 +72,11 @@ Giải thích cách chạy trang web và những phần tôi cần kiểm tra.
 ### Các yêu cầu điều chỉnh
 Sinh viên yêu cầu giữ header/footer/danh mục, làm rõ VAT và phí vận chuyển, thêm ảnh, sửa hành vi xem ảnh, bỏ nhãn phụ và bổ sung Chia sẻ.
 
-
 ## 4. Kết quả AI đề xuất
-Bản lưu bước 6: Có nút chia sẻ cạnh tên; thương hiệu được giữ trong bảng thông tin thay vì đặt phía trên tên.
+Hai cột ảnh và mua hàng ở trên; mô tả mở toàn chiều rộng bên dưới; banner riêng và bốn sản phẩm liên quan.
 
 ## 5. Kiểm tra và điều chỉnh
-Thêm nút Chia sẻ cạnh tên sản phẩm, hộp liên kết sản phẩm và lựa chọn Facebook/Email; bỏ dòng thương hiệu phía trên tên.
-Đây là bản đã lưu trong quá trình chỉnh sửa. Kết quả kiểm tra của bản hoàn thiện được bổ sung ở lượt cuối; không dùng kết quả đó để khẳng định mọi bản cũ đã đạt.
+Sinh viên phát hiện các vấn đề qua bản hiển thị và đưa yêu cầu điều chỉnh. AI hỗ trợ sửa mã. Kiểm tra trình duyệt trong phiên hỗ trợ phát hiện và sửa thêm tràn ngang của điều hướng. Kết quả và giới hạn ghi tại TESTING.md. Không ghi việc AI sửa mã thành thao tác tự viết của sinh viên.
 
 ## 6. Phần tôi hiểu và có thể giải thích
-Cấu trúc HTML, liên kết CSS, Grid và Flexbox, media query, margin/padding/gap, radio/label/:checked và popover. Chi tiết áp dụng phụ thuộc chức năng đã có trong từng bản lưu.
+Nội dung cần nắm để giải thích: cấu trúc header/main/article/section/footer; Grid và media query; radio/label/:checked cho gallery; popover/popovertarget để xem ảnh; margin và padding; position: relative cho vùng điều hướng. Báo cáo có bảng giải thích vai trò từng phần; chưa dùng tài liệu này để xác nhận năng lực trả lời của sinh viên.

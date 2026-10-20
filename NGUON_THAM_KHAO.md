@@ -50,7 +50,7 @@ Các file PNG được giữ nguyên byte khi tải về. Trang chỉ điều ch
 ## Ảnh thật trong banner
 
 - Bài viết nguồn: https://menaselect.com/blog/bua-toi-gourmet-tai-nha-voi-combo-ca-hoi-na-uy-doc-quyen-mena-select
-- Tệp: assets/inspiration-seafood.png. Ảnh cá hồi và gia vị được giải mã từ ảnh nhúng của bài viết, giữ nguyên bytes, không dùng ảnh tạo bằng AI.
+- Tệp: assets/inspiration-seafood.png. Ảnh cá hồi và gia vị được giải mã từ ảnh nhúng của bài viết, giữ nguyên bytes.
 - Ảnh dùng làm banner hải sản, không gắn nhãn thành ảnh sản phẩm cá phèn.
 
 ## Thành phần HTML

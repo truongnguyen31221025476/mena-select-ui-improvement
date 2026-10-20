@@ -67,7 +67,7 @@ main .section-space { margin-top: 24px; }
 .header-cart { display: grid; place-items: center; flex: 0 0 48px; width: 48px; height: 48px; border-radius: 50%; color: #e7efbd; background: #7c3d2c; }
 .site-navigation { background: #f2f5e8; border-bottom: 1px solid #e6eadc; }
 .navigation-inner { display: flex; align-items: flex-start; gap: 12px; padding-block: 8px; }
-.navigation-links { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; min-width: 0; }
+.navigation-links { position: relative; display: flex; align-items: center; flex-wrap: wrap; gap: 9px; min-width: 0; }
 .nav-pill { display: inline-flex; align-items: center; gap: 8px; min-height: 34px; padding: 4px 13px; border-radius: 999px; background: #fff; color: var(--color-nav); font-size: 14px; line-height: 1.35; font-weight: 700; text-decoration: none; white-space: nowrap; }
 .nav-pill img { width: 21px; height: 21px; object-fit: contain; }
 .nav-pill:hover { background: #e8eddb; }
