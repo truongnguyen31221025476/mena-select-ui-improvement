@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bài tập HTML/CSS: cải tiến trang chi tiết sản phẩm Mena Select, với ảnh lớn và mô tả chi tiết trên toàn chiều rộng.">
+  <title>Cá phèn Hải Nam 500g | Mena Select – Giao diện mẫu</title>
+  <link rel="icon" href="assets/mena-select-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="dau-trang">
+  <a class="skip-link" href="#noi-dung">Đến nội dung chính</a>
+
+  
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 3c-2 0-8 0-12 4S3 16 7 19s8 1 11-3 2-10 2-13Z"/><path d="m4 21 12-12M9 16v-5m0 5h5"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24"><path d="M3 8h18v4H3zM5 12v9h14v-9M12 8v13"/><path d="M12 8H8a3 3 0 1 1 3-3l1 3Zm0 0h4a3 3 0 1 0-3-3l-1 3Z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 3 7v6c0 5 9 9 9 9s9-4 9-9V7l-9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="icon-return" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 0 6M4 4v6h6"/></symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-snow" viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 3 3-3M9 20l3-3 3 3M4 10l4-1-1-4m13 9-4 1 1 4M7 19l1-4-4-1m13-9-1 4 4 1"/></symbol>
+    <symbol id="icon-fish" viewBox="0 0 24 24"><path d="M4 12s4-6 9-6c4 0 7 6 7 6s-3 6-7 6c-5 0-9-6-9-6Z"/><path d="m4 12-3-4v8l3-4Zm6-5 2-4 3 3m-5 11 2 4 3-3"/><circle cx="16" cy="11" r=".7"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 3h7v7M21 3 11 13M10 3H3v18h18v-7"/></symbol>
+  </svg>
+
+  <div class="announcement">
+    <div class="container announcement__inner">
+      <span>Chọn vị ngon cho bữa ăn nhà</span>
+      <span class="announcement__tag">Bản giao diện học tập</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#dau-trang" aria-label="Mena Select — đầu trang">
+        <img src="assets/mena-select-logo.png" alt="Mena Select" width="346" height="80">
+      </a>
+      <nav class="main-nav" aria-label="Điều hướng trang sản phẩm">
+        <a href="#mo-ta">Thông tin sản phẩm</a>
+        <a href="#san-pham-lien-quan">Gợi ý cho bạn</a>
+        <a href="https://menaselect.com/" target="_blank" rel="noopener noreferrer">Website gốc <span class="sr-only">(mở thẻ mới)</span></a>
+      </nav>
+      <a class="header-action" href="#mua-hang" aria-label="Đến khu vực chọn mua sản phẩm">
+        <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>
+        <span>Chọn mua</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="noi-dung" class="container">
+    <nav class="breadcrumbs" aria-label="Đường dẫn danh mục">
+      <ol>
+        <li><a href="https://menaselect.com/" target="_blank" rel="noopener noreferrer">Trang chủ <span class="sr-only">(mở thẻ mới)</span></a></li>
+        <li><a href="https://menaselect.com/thit-trung-hai-san/ca-thuy-hai-san-tuoi" target="_blank" rel="noopener noreferrer">Hải sản <span class="sr-only">(mở thẻ mới)</span></a></li>
+        <li aria-current="page">Cá phèn fillet</li>
+      </ol>
+    </nav>
+
+    <article class="product" aria-labelledby="ten-san-pham">
+      
+      <div class="product-hero">
+        <header class="product-heading">
+          <p class="eyebrow">Hải Nam Foods <span aria-hidden="true">/</span> Hải sản</p>
+          <h1 id="ten-san-pham">Cá phèn Hải Nam fillet còn da size 20–40 gói 500g</h1>
+        </header>
+
+        <div class="product-gallery">
+          <figure>
+          <a class="product-gallery__stage" href="assets/ca-phen.png" target="_blank" rel="noopener noreferrer" aria-label="Mở ảnh gốc cá phèn Hải Nam trong thẻ mới">
+            <span class="product-gallery__badge">500g / gói</span>
+            
+            <img class="product-gallery__image" src="assets/ca-phen.png" alt="Gói cá phèn Hải Nam fillet còn da 500g, có nhãn trên bao bì" width="1200" height="1200" fetchpriority="high">
+            <span class="product-gallery__expand" aria-hidden="true"><svg class="icon"><use href="#icon-expand"/></svg></span>
+          </a>
+          <figcaption class="product-gallery__caption">
+            <span>Ảnh sản phẩm <strong>1 / 1</strong></span>
+            <span>Bấm ảnh để xem bản gốc</span>
+          </figcaption>
+          </figure>
+          <div class="product-highlights" aria-label="Thông tin nhanh">
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-fish"/></svg>Fillet còn da</span>
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-snow"/></svg>Bảo quản −18°C</span>
+          </div>
+        </div>
+
+        <div class="product-summary" id="mua-hang">
+          <dl class="quick-facts">
+            <div><dt>Quy cách</dt><dd>Gói 500g</dd></div>
+            <div><dt>Nguồn gốc</dt><dd>Việt Nam</dd></div>
+          </dl>
+
+          <div class="price-panel" aria-label="Giá sản phẩm">
+            <p class="price-panel__label">Giá bán</p>
+            <div class="price-row">
+              <strong class="current-price">225.000<span>₫</span></strong>
+              <span class="discount-badge">Giảm 14%</span>
+            </div>
+            <p class="old-price"><span>Giá niêm yết</span> <del>262.000 ₫</del></p>
+            <p class="tax-note">Đã bao gồm VAT · Chưa gồm phí vận chuyển</p>
+          </div>
+
+          
+          <p class="short-description">Cá phèn fillet giữ da, đóng gói 500g. Dễ kết hợp cho các món chiên giòn, kho tiêu hoặc kho nghệ trong bữa ăn gia đình.</p>
+
+          <aside class="offer" aria-labelledby="tieu-de-uu-dai">
+            <svg class="icon offer__icon" aria-hidden="true"><use href="#icon-gift"/></svg>
+            <div>
+              <h2 id="tieu-de-uu-dai">Ưu đãi &amp; quà tặng</h2>
+              <p>Tiết kiệm <strong>37.000 ₫</strong> so với giá niêm yết.</p>
+              <details class="offer__details">
+                <summary>Xem điều kiện áp dụng</summary>
+                <p>Giá trong trang là dữ liệu mẫu tại thời điểm khảo sát. Quà tặng kèm, nếu có, áp dụng theo chương trình được công bố trên <a href="https://menaselect.com/ca-phen-hai-nam-fillet-con-da-size-20-40-goi-500g" target="_blank" rel="noopener noreferrer">trang sản phẩm gốc <span class="sr-only">(mở thẻ mới)</span></a>.</p>
+              </details>
+            </div>
+          </aside>
+
+          <form class="purchase-form" action="#thong-bao-mau" method="get" aria-describedby="ghi-chu-thao-tac">
+            <div class="quantity-field">
+              <label for="so-luong">Số lượng</label>
+              <input id="so-luong" name="so-luong" type="number" min="1" max="99" step="1" value="1" required inputmode="numeric">
+            </div>
+            <button class="button button--primary" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>
+              Thêm vào giỏ
+            </button>
+          </form>
+          <p class="interaction-note" id="ghi-chu-thao-tac">Nút mua minh họa cho bài tập HTML/CSS.</p>
+
+          <div id="thong-bao-mau" class="demo-notice" role="status" tabindex="-1">
+            <strong>Đây là thao tác minh họa.</strong>
+            <p>Sản phẩm chưa được lưu vào giỏ và chưa có đơn hàng nào được tạo.</p>
+            <a href="#mua-hang">Trở lại thông tin mua hàng</a>
+          </div>
+
+          <div class="policy-links" aria-label="Chính sách liên quan">
+            <a href="https://menaselect.com/chinh-sach-thanh-vien" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg>
+              <span>Chính sách thành viên<span class="sr-only"> (mở thẻ mới)</span></span>
+              <svg class="icon icon--small" aria-hidden="true"><use href="#icon-chevron"/></svg>
+            </a>
+            <a href="https://menaselect.com/return_and_xchange_policy" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#icon-return"/></svg>
+              <span>Chính sách đổi trả<span class="sr-only"> (mở thẻ mới)</span></span>
+              <svg class="icon icon--small" aria-hidden="true"><use href="#icon-chevron"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      
+      <section id="mo-ta" class="product-description section-space" aria-labelledby="tieu-de-mo-ta">
+        <header class="section-heading">
+          <div><p class="eyebrow">Tìm hiểu trước khi chọn</p><h2 id="tieu-de-mo-ta">Mô tả sản phẩm</h2></div>
+          <a class="text-link" href="#mua-hang">Về khu vực mua hàng <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        </header>
+
+        <div class="description-card">
+          <div class="description-intro">
+            <h3>Gọn khâu chuẩn bị, thêm lựa chọn cho bữa cơm</h3>
+            <p>Cá phèn Hải Nam fillet còn da được sơ chế và đóng thành gói 500g. Phần thịt cá giữ lại da, phù hợp cho nhiều cách chế biến như chiên giòn, chiên sả ớt, kho nghệ hoặc kho tiêu.</p>
+            <p>Phần fillet giúp giảm bớt công sơ chế. Quy cách gói 500g thuận tiện để lựa chọn lượng nguyên liệu cần cho bữa ăn, kết hợp cùng gia vị và rau củ theo thực đơn của gia đình.</p>
+          </div>
+
+          <section class="specifications" aria-labelledby="tieu-de-thong-so">
+            <h3 id="tieu-de-thong-so">Thông tin sản phẩm</h3>
+            <dl class="spec-grid">
+              <div><dt>Thương hiệu</dt><dd>HẢI NAM FOODS</dd></div>
+              <div><dt>Nguồn gốc</dt><dd>VIỆT NAM</dd></div>
+              <div><dt>Khối lượng</dt><dd>500g</dd></div>
+              <div><dt>Đơn vị bán</dt><dd>Gói</dd></div>
+              <div><dt>Dạng sản phẩm</dt><dd>Fillet còn da</dd></div>
+              <div><dt>Size</dt><dd>20–40</dd></div>
+            </dl>
+          </section>
+
+          <div class="care-grid">
+            <section class="care-card" aria-labelledby="tieu-de-su-dung">
+              <span class="care-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span>
+              <div><h3 id="tieu-de-su-dung">Hướng dẫn sử dụng</h3><p>Làm rã đông, rửa lại cá và chế biến chín kỹ trước khi dùng.</p></div>
+            </section>
+            <section class="care-card" aria-labelledby="tieu-de-bao-quan">
+              <span class="care-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-snow"/></svg></span>
+              <div><h3 id="tieu-de-bao-quan">Bảo quản</h3><p>Giữ trong ngăn đông tủ lạnh ở nhiệt độ −18°C.</p></div>
+            </section>
+          </div>
+          <p class="description-footnote">Thông tin tham khảo từ trang sản phẩm Mena Select. Kiểm tra nhãn trên bao bì khi sử dụng.</p>
+        </div>
+      </section>
+    </article>
+
+    
+    <aside class="inspiration-banner section-space" aria-labelledby="tieu-de-banner">
+      <div class="inspiration-banner__copy">
+        <p class="eyebrow">Gợi ý cho thực đơn mỗi ngày</p>
+        <h2 id="tieu-de-banner">Thêm cảm hứng<br>cho bữa cơm nhà.</h2>
+        <p>Khám phá thêm các lựa chọn hải sản từ Mena Select.</p>
+        <a class="button button--light" href="#san-pham-lien-quan">Xem gợi ý bên dưới <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </div>
+      <div class="inspiration-banner__art" aria-hidden="true"><svg><use href="#icon-fish"/></svg><span>CHỌN VỊ NGON<br>CHO BỮA ĂN NHÀ</span></div>
+    </aside>
+
+    <section id="san-pham-lien-quan" class="related-products section-space" aria-labelledby="tieu-de-lien-quan">
+      <header class="section-heading">
+        <div><p class="eyebrow">Thêm lựa chọn cho bạn</p><h2 id="tieu-de-lien-quan">Sản phẩm liên quan</h2></div>
+        <span class="section-caption">4 sản phẩm tham khảo</span>
+      </header>
+      <div class="product-grid">
+        <article class="product-card product-card--ca-hoi" aria-labelledby="ten-ca-hoi">
+          <a class="product-card__photo" href="https://menaselect.com/phi-le-ca-hoi-tuoi-nauy-kome88-khay-250g" target="_blank" rel="noopener noreferrer" aria-label="Xem Phi Lê Cá Hồi Tươi Nauy Kome88 Khay 250g trên Mena Select, mở thẻ mới">
+            <img src="assets/ca-hoi.png" alt="Bao bì Phi Lê Cá Hồi Tươi Nauy Kome88 Khay 250g" width="1200" height="1200" loading="lazy">
+          </a>
+          <div class="product-card__body">
+            <p class="product-card__category">Kome88 · Khay 250g</p>
+            <h3 id="ten-ca-hoi"><a href="https://menaselect.com/phi-le-ca-hoi-tuoi-nauy-kome88-khay-250g" target="_blank" rel="noopener noreferrer">Phi Lê Cá Hồi Tươi Nauy Kome88 Khay 250g<span class="sr-only"> (mở thẻ mới)</span></a></h3>
+            <p class="product-card__price">186.000 ₫</p>
+            <a class="product-card__action" href="https://menaselect.com/phi-le-ca-hoi-tuoi-nauy-kome88-khay-250g" target="_blank" rel="noopener noreferrer">Xem chi tiết<span class="sr-only"> Phi Lê Cá Hồi Tươi Nauy Kome88 Khay 250g (mở thẻ mới)</span><svg class="icon icon--small" aria-hidden="true"><use href="#icon-external"/></svg></a>
+          </div>
+        </article>
+        <article class="product-card product-card--muc-ong" aria-labelledby="ten-muc-ong">
+          <a class="product-card__photo" href="https://menaselect.com/muc-ong-nhoi-thit-hai-nam-khay-500g" target="_blank" rel="noopener noreferrer" aria-label="Xem Mực Ống Nhồi Thịt Hải Nam Khay 500g trên Mena Select, mở thẻ mới">
+            <img src="assets/muc-ong.png" alt="Bao bì Mực Ống Nhồi Thịt Hải Nam Khay 500g" width="1200" height="1200" loading="lazy">
+          </a>
+          <div class="product-card__body">
+            <p class="product-card__category">Hải Nam Foods · 500g</p>
+            <h3 id="ten-muc-ong"><a href="https://menaselect.com/muc-ong-nhoi-thit-hai-nam-khay-500g" target="_blank" rel="noopener noreferrer">Mực Ống Nhồi Thịt Hải Nam Khay 500g<span class="sr-only"> (mở thẻ mới)</span></a></h3>
+            <p class="product-card__price">229.000 ₫</p>
+            <a class="product-card__action" href="https://menaselect.com/muc-ong-nhoi-thit-hai-nam-khay-500g" target="_blank" rel="noopener noreferrer">Xem chi tiết<span class="sr-only"> Mực Ống Nhồi Thịt Hải Nam Khay 500g (mở thẻ mới)</span><svg class="icon icon--small" aria-hidden="true"><use href="#icon-external"/></svg></a>
+          </div>
+        </article>
+        <article class="product-card product-card--ngheu-lua" aria-labelledby="ten-ngheu-lua">
+          <a class="product-card__photo" href="https://menaselect.com/ngheu-lua-thit-luoc-size-1000-hai-nam-khay-500g" target="_blank" rel="noopener noreferrer" aria-label="Xem Nghêu Lụa Thịt Luộc Size 1000 Hải Nam Khay 500g trên Mena Select, mở thẻ mới">
+            <img src="assets/ngheu-lua.png" alt="Bao bì Nghêu Lụa Thịt Luộc Size 1000 Hải Nam Khay 500g" width="1200" height="1200" loading="lazy">
+          </a>
+          <div class="product-card__body">
+            <p class="product-card__category">Hải Nam Foods · 500g</p>
+            <h3 id="ten-ngheu-lua"><a href="https://menaselect.com/ngheu-lua-thit-luoc-size-1000-hai-nam-khay-500g" target="_blank" rel="noopener noreferrer">Nghêu Lụa Thịt Luộc Size 1000 Hải Nam Khay 500g<span class="sr-only"> (mở thẻ mới)</span></a></h3>
+            <p class="product-card__price">129.000 ₫</p>
+            <a class="product-card__action" href="https://menaselect.com/ngheu-lua-thit-luoc-size-1000-hai-nam-khay-500g" target="_blank" rel="noopener noreferrer">Xem chi tiết<span class="sr-only"> Nghêu Lụa Thịt Luộc Size 1000 Hải Nam Khay 500g (mở thẻ mới)</span><svg class="icon icon--small" aria-hidden="true"><use href="#icon-external"/></svg></a>
+          </div>
+        </article>
+        <article class="product-card product-card--muc-lam-sach" aria-labelledby="ten-muc-lam-sach">
+          <a class="product-card__photo" href="https://menaselect.com/muc-ong-hai-nam-nguyen-con-lam-sach-dong-lanh-size-6-8cm-khay-500g" target="_blank" rel="noopener noreferrer" aria-label="Xem Mực ống Hải Nam nguyên con làm sạch đông lạnh size 6-8cm khay 500g trên Mena Select, mở thẻ mới">
+            <img src="assets/muc-lam-sach.png" alt="Bao bì Mực ống Hải Nam nguyên con làm sạch đông lạnh size 6-8cm khay 500g" width="1200" height="1200" loading="lazy">
+          </a>
+          <div class="product-card__body">
+            <p class="product-card__category">Hải Nam Foods · 500g</p>
+            <h3 id="ten-muc-lam-sach"><a href="https://menaselect.com/muc-ong-hai-nam-nguyen-con-lam-sach-dong-lanh-size-6-8cm-khay-500g" target="_blank" rel="noopener noreferrer">Mực ống Hải Nam nguyên con làm sạch đông lạnh size 6-8cm khay 500g<span class="sr-only"> (mở thẻ mới)</span></a></h3>
+            <p class="product-card__price">182.000 ₫</p>
+            <a class="product-card__action" href="https://menaselect.com/muc-ong-hai-nam-nguyen-con-lam-sach-dong-lanh-size-6-8cm-khay-500g" target="_blank" rel="noopener noreferrer">Xem chi tiết<span class="sr-only"> Mực ống Hải Nam nguyên con làm sạch đông lạnh size 6-8cm khay 500g (mở thẻ mới)</span><svg class="icon icon--small" aria-hidden="true"><use href="#icon-external"/></svg></a>
+          </div>
+        </article>
+      </div>
+      <p class="catalog-note">Giá mẫu ghi nhận ngày 20/10/2026. Nút “Xem chi tiết” mở trang Mena Select trong thẻ mới.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer section-space">
+    <div class="container site-footer__inner">
+      <div><img src="assets/mena-select-logo.png" alt="Mena Select" width="346" height="80" loading="lazy"><p>Bài tập cá nhân · Nguyễn Văn Trường</p></div>
+      <p class="site-footer__note">Bản thiết kế HTML/CSS phục vụ học tập.<br>Thông tin, hình ảnh tham khảo từ Mena Select.</p>
+      <a class="text-link" href="#dau-trang">Về đầu trang <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>
