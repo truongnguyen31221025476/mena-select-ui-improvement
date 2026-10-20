@@ -38,3 +38,22 @@ Các file PNG được giữ nguyên byte khi tải về. Trang chỉ điều ch
 ## Tài liệu kiểm tra giao diện
 
 - [Chrome DevTools: Device Mode](https://developer.chrome.com/docs/devtools/device-mode/).
+
+## Header, menu danh mục và footer
+
+- Nguồn: https://menaselect.com/ (đối chiếu ngày 20/10/2026).
+- Giữ nội dung 7 mục điều hướng, 17 nhóm danh mục cùng nhóm con trong menu công bố; không tái phân nhóm dựa trên tiền tố URL.
+- Logo, biểu tượng menu, biểu tượng mạng xã hội, kênh thanh toán, ứng dụng và chứng nhận được lưu cục bộ từ trang nguồn.
+- Header/footer được dựng lại bằng HTML/CSS; các luồng tài khoản, vị trí và giỏ hàng của website gốc không được sao chép.
+- Phông SVN-Omny Regular, SemiBold, Bold lấy theo tài nguyên CSS của website gốc.
+
+## Ảnh thật trong banner
+
+- Bài viết nguồn: https://menaselect.com/blog/bua-toi-gourmet-tai-nha-voi-combo-ca-hoi-na-uy-doc-quyen-mena-select
+- Tệp: assets/inspiration-seafood.png. Ảnh cá hồi và gia vị được giải mã từ ảnh nhúng của bài viết, giữ nguyên bytes, không dùng ảnh tạo bằng AI.
+- Ảnh dùng làm banner hải sản, không gắn nhãn thành ảnh sản phẩm cá phèn.
+
+## Thành phần HTML
+
+- MDN, thuộc tính popover: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/popover
+- Các chức năng đóng/mở dùng HTML native, không có JavaScript trong dự án.

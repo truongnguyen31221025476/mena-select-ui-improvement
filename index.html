@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bài tập HTML/CSS: cải tiến trang chi tiết sản phẩm Mena Select, với ảnh lớn và mô tả chi tiết trên toàn chiều rộng.">
-  <title>Cá phèn Hải Nam 500g | Mena Select – Giao diện mẫu</title>
+  <meta name="description" content="Cá phèn Hải Nam fillet còn da gói 500g. Xem hình ảnh, thông tin sản phẩm, hướng dẫn sử dụng và bảo quản tại Mena Select.">
+  <title>Cá phèn Hải Nam fillet còn da 500g | Mena Select</title>
   <link rel="icon" href="assets/mena-select-logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,38 +25,75 @@
     <symbol id="icon-snow" viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 3 3-3M9 20l3-3 3 3M4 10l4-1-1-4m13 9-4 1 1 4M7 19l1-4-4-1m13-9-1 4 4 1"/></symbol>
     <symbol id="icon-fish" viewBox="0 0 24 24"><path d="M4 12s4-6 9-6c4 0 7 6 7 6s-3 6-7 6c-5 0-9-6-9-6Z"/><path d="m4 12-3-4v8l3-4Zm6-5 2-4 3 3m-5 11 2 4 3-3"/><circle cx="16" cy="11" r=".7"/></symbol>
     <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 3h7v7M21 3 11 13M10 3H3v18h18v-7"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="icon-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></symbol>
+    <symbol id="icon-receipt" viewBox="0 0 24 24"><path d="M6 3h12v19l-3-2-3 2-3-2-3 2V3ZM9 7h6M9 11h6M9 15h3"/></symbol>
+    <symbol id="icon-cart" viewBox="0 0 24 24"><path d="M2 3h3l3 13h11l3-10H6M8 12h12"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
   </svg>
 
-  <div class="announcement">
-    <div class="container announcement__inner">
-      <span>Chọn vị ngon cho bữa ăn nhà</span>
-      <span class="announcement__tag">Bản giao diện học tập</span>
-    </div>
-  </div>
-
   <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="#dau-trang" aria-label="Mena Select — đầu trang">
-        <img src="assets/mena-select-logo.png" alt="Mena Select" width="346" height="80">
-      </a>
-      <nav class="main-nav" aria-label="Điều hướng trang sản phẩm">
-        <a href="#mo-ta">Thông tin sản phẩm</a>
-        <a href="#san-pham-lien-quan">Gợi ý cho bạn</a>
-        <a href="https://menaselect.com/" target="_blank" rel="noopener noreferrer">Website gốc <span class="sr-only">(mở thẻ mới)</span></a>
-      </nav>
-      <a class="header-action" href="#mua-hang" aria-label="Đến khu vực chọn mua sản phẩm">
-        <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>
-        <span>Chọn mua</span>
-      </a>
+    <div class="header-main">
+      <div class="container header-main__inner">
+        <a href="https://menaselect.com/" target="_blank" rel="noopener noreferrer" class="brand"><img src="assets/mena-select-logo.png" alt="Mena Select" width="346" height="80"><span class="sr-only"> (mở thẻ mới)</span></a>
+        <a class="receiving-pill" href="https://menaselect.com/" target="_blank" rel="noopener noreferrer">
+          <span><strong>Giao hàng hay tự nhận hàng?</strong><small>Bạn muốn nhận đơn hàng tại vị trí nào?</small></span><svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg><span class="sr-only"> (chọn trên Mena Select, mở thẻ mới)</span>
+        </a>
+        <form class="header-search" role="search" action="https://menaselect.com/catalogsearch/result/" method="get" target="_blank" rel="noopener noreferrer">
+          <label class="sr-only" for="tu-khoa">Tìm kiếm sản phẩm trên Mena Select</label>
+          <input id="tu-khoa" name="q" type="search" placeholder="Xin chào! Bạn muốn tìm gì?" maxlength="128" required>
+          <button type="submit" aria-label="Tìm kiếm trên Mena Select, mở thẻ mới"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg></button>
+        </form>
+        <div class="header-tools">
+          <a href="https://menaselect.com/sales/guest/form/" target="_blank" rel="noopener noreferrer" class="header-tool"><svg class="icon" aria-hidden="true"><use href="#icon-receipt"/></svg><span><small>Tra cứu</small><strong>Đơn hàng</strong></span><span class="sr-only"> (mở thẻ mới)</span></a>
+          <a href="https://menaselect.com/customer/account/" target="_blank" rel="noopener noreferrer" class="header-tool"><svg class="icon" aria-hidden="true"><use href="#icon-user"/></svg><span><small>Đăng nhập</small><strong>Tài khoản</strong></span><span class="sr-only"> (mở thẻ mới)</span></a>
+          <a href="https://menaselect.com/checkout/cart/" target="_blank" rel="noopener noreferrer" class="header-cart"><svg class="icon" aria-hidden="true"><use href="#icon-cart"/></svg><span class="sr-only">Giỏ hàng</span><span class="sr-only"> (mở thẻ mới)</span></a>
+        </div>
+      </div>
     </div>
+    <nav class="site-navigation" aria-label="Điều hướng chính Mena Select">
+      <div class="container navigation-inner">
+        <details class="category-menu" id="danh-muc">
+          <summary class="nav-pill nav-pill--category"><img src="assets/chrome/nav-00.png" alt="" width="96" height="96" loading="lazy"><span>Danh Mục</span><svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg></summary>
+          <div class="category-menu__panel"><ul class="category-tree">
+            <li><a href="https://menaselect.com/khuyen-mai-cua-tuan" target="_blank" rel="noopener noreferrer" class="category-direct"><img src="assets/chrome/category-01.png" alt="" width="1200" height="1200" loading="lazy"><span>Khuyến Mãi Của Tuần</span><span class="sr-only"> (mở thẻ mới)</span></a></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-02.png" alt="" width="1000" height="1000" loading="lazy"><span>Chương Trình Khuyến Mãi</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/ctkm" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Chương Trình Khuyến Mãi<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/ctkm/mua-la-co-qua" target="_blank" rel="noopener noreferrer">Mua Là Có Quà<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ctkm/deal-fresh" target="_blank" rel="noopener noreferrer">Deal Thực Phẩm Tươi Sống<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ctkm/deal-thuc-pham-man" target="_blank" rel="noopener noreferrer">Deal Thực Phẩm Mặn<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ctkm/deal-thuc-pham-ngot" target="_blank" rel="noopener noreferrer">Deal Thực Phẩm Ngọt<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ctkm/deal-giai-khat" target="_blank" rel="noopener noreferrer">Deal Giải Khát<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ctkm/deal-cham-soc-ca-nhan-nha-cua" target="_blank" rel="noopener noreferrer">Deal Chăm Sóc<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ctkm/deal-me-be-dinh-duong" target="_blank" rel="noopener noreferrer">Deal Mẹ &amp; Bé - Dinh Dưỡng<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ctkm/deal-gia-dung" target="_blank" rel="noopener noreferrer">Deal Gia Dụng<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-03.png" alt="" width="512" height="512" loading="lazy"><span>Gourmet</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/gourmet-am-thuc-tinh-te" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Gourmet<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/gourmet-am-thuc-tinh-te/wine-celebration-drinks" target="_blank" rel="noopener noreferrer">Rượu Vang Đặc Tuyển<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gourmet-am-thuc-tinh-te/premium-fruit-fresh" target="_blank" rel="noopener noreferrer">Trái Cây &amp; Thực Phẩm Tươi<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gourmet-am-thuc-tinh-te/premium-water-beverage" target="_blank" rel="noopener noreferrer">Đồ Uống Cao Cấp<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gourmet-am-thuc-tinh-te/cheese-dairy-dessert" target="_blank" rel="noopener noreferrer">Phô Mai &amp; Tráng Miệng<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gourmet-am-thuc-tinh-te/pasta-sauce-condiments" target="_blank" rel="noopener noreferrer">Sốt Pasta &amp; Gia Vị<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gourmet-am-thuc-tinh-te/chocolate-fine-snacks" target="_blank" rel="noopener noreferrer">Chocolate &amp; Snack Thượng Hạng<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-04.png" alt="" width="512" height="512" loading="lazy"><span>Rau Củ Quả</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/rau-cu-qua" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Rau Củ Quả<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/rau-cu-qua/rau" target="_blank" rel="noopener noreferrer">Rau<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/rau-cu-qua/cu-qua" target="_blank" rel="noopener noreferrer">Củ - Quả<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/rau-cu-qua/nam-mang-rong" target="_blank" rel="noopener noreferrer">Nấm - Măng - Rong<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-05.jpg" alt="" width="1720" height="1720" loading="lazy"><span>Trái Cây</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/trai-cay" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Trái Cây<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/trai-cay/trai-cay-noi-dia" target="_blank" rel="noopener noreferrer">Trái Cây Nội Địa<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/trai-cay/trai-cay-nhap-khau" target="_blank" rel="noopener noreferrer">Trái Cây Nhập Khẩu<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-06.png" alt="" width="512" height="512" loading="lazy"><span>Thịt Trứng Hải Sản</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/thit-trung-hai-san" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Thịt Trứng Hải Sản<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/thit-trung-hai-san/trung-gia-cam" target="_blank" rel="noopener noreferrer">Trứng Gia Cầm<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thit-trung-hai-san/tom-muc-ca-kho" target="_blank" rel="noopener noreferrer">Tôm - Mực - Cá Khô<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thit-trung-hai-san/ca-thuy-hai-san-tuoi" target="_blank" rel="noopener noreferrer">Cá - Thủy, Hải Sản Tươi<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thit-trung-hai-san/thit-heo" target="_blank" rel="noopener noreferrer">Thịt Heo<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thit-trung-hai-san/thit-bo" target="_blank" rel="noopener noreferrer">Thịt Bò<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thit-trung-hai-san/thit-gia-cam" target="_blank" rel="noopener noreferrer">Thịt Gia Cầm<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-07.png" alt="" width="512" height="512" loading="lazy"><span>Thực Phẩm Đông Mát</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/thuc-pham-dong-mat" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Thực Phẩm Đông Mát<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/thuc-pham-dong-mat/hai-san-dong-lanh" target="_blank" rel="noopener noreferrer">Hải Sản Đông Lạnh<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thuc-pham-dong-mat/lam-san-an-lien" target="_blank" rel="noopener noreferrer">Làm Sẵn - Ăn Liền<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thuc-pham-dong-mat/banh-dong-ran" target="_blank" rel="noopener noreferrer">Bánh Đông Rán<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thuc-pham-dong-mat/do-nguoi-thit-che-bien" target="_blank" rel="noopener noreferrer">Đồ Nguội - Thịt Chế Biến<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thuc-pham-dong-mat/banh-bao-banh-mi-pizza" target="_blank" rel="noopener noreferrer">Bánh Bao - Bánh Mì - Pizza<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thuc-pham-dong-mat/rau-cu-trai-cay-dong-lanh" target="_blank" rel="noopener noreferrer">Rau - Củ - Trái Cây Đông Lạnh<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/thuc-pham-dong-mat/bun-tuoi-dau-hu-dua-chua" target="_blank" rel="noopener noreferrer">Bún Tươi - Đậu Hũ - Dưa Chua<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-08.png" alt="" width="512" height="512" loading="lazy"><span>Phô Mai Bơ Sữa</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/pho-mai-bo-sua" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Phô Mai Bơ Sữa<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/pho-mai-bo-sua/bo-pho-mai-san-pham-tu-sua" target="_blank" rel="noopener noreferrer">Bơ - Phô Mai - Sản Phẩm Từ Sữa<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/pho-mai-bo-sua/sua-sua-dac" target="_blank" rel="noopener noreferrer">Sữa - Sữa Đặc<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/pho-mai-bo-sua/sua-hat-sua-dau" target="_blank" rel="noopener noreferrer">Sữa Hạt - Sữa Đậu<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/pho-mai-bo-sua/sua-chua" target="_blank" rel="noopener noreferrer">Sữa Chua<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-09.jpg" alt="" width="1720" height="1720" loading="lazy"><span>Bánh mì &amp; Bánh ngọt</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/banh-mi-banh-ngot-tuoi" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Bánh mì &amp; Bánh ngọt<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/banh-mi-banh-ngot-tuoi/banh-mi" target="_blank" rel="noopener noreferrer">Bánh mì<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/banh-mi-banh-ngot-tuoi/banh-ngot" target="_blank" rel="noopener noreferrer">Bánh ngọt<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-10.png" alt="" width="512" height="512" loading="lazy"><span>Đồ Hộp Mì Xúc Xích</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/do-hop-mi-xuc-xich" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Đồ Hộp Mì Xúc Xích<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/do-hop-mi-xuc-xich/mi-bun-pho-nui-banh-trang" target="_blank" rel="noopener noreferrer">Mì - Bún - Phở - Nui - Bánh Tráng<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/do-hop-mi-xuc-xich/mi-mien-chao-pho-canh-an-lien" target="_blank" rel="noopener noreferrer">Mì - Miến - Cháo - Phở - Canh Ăn Liền<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/do-hop-mi-xuc-xich/do-hop" target="_blank" rel="noopener noreferrer">Đồ Hộp<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/do-hop-mi-xuc-xich/xuc-xich-lap-xuong-cha-bong" target="_blank" rel="noopener noreferrer">Xúc Xích - Lạp Xưởng - Chà Bông<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-11.png" alt="" width="512" height="512" loading="lazy"><span>Gia Vị Dầu Ăn</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/gia-vi-dau-an" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Gia Vị Dầu Ăn<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/gia-vi-dau-an/gia-vi" target="_blank" rel="noopener noreferrer">Gia Vị<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/muoi-duong-hat-nem-bot-ngot" target="_blank" rel="noopener noreferrer">Muối - Đường - Hạt Nêm - Bột Ngọt<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/dau-an" target="_blank" rel="noopener noreferrer">Dầu Ăn<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/dau-hao-giam-bo" target="_blank" rel="noopener noreferrer">Dầu Hào - Giấm - Bơ<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/duong" target="_blank" rel="noopener noreferrer">Đường<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/tuong-ot-tuong-ca-sot-tron-cham" target="_blank" rel="noopener noreferrer">Tương Ớt - Tương Cà - Sốt Trộn Chấm<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/nuoc-mam" target="_blank" rel="noopener noreferrer">Nước Mắm<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/nuoc-tuong" target="_blank" rel="noopener noreferrer">Nước Tương<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/tieu-sa-te-ot-bot" target="_blank" rel="noopener noreferrer">Tiêu - Sa Tế - Ớt Bột<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-12.png" alt="" width="512" height="512" loading="lazy"><span>Gạo Đậu Đồ Khô</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/gao-dau-do-kho" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Gạo Đậu Đồ Khô<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/gao-dau-do-kho/bot" target="_blank" rel="noopener noreferrer">Bột<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gao-dau-do-kho/dau-me" target="_blank" rel="noopener noreferrer">Đậu - Mè<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gia-vi-dau-an/yen-mach" target="_blank" rel="noopener noreferrer">Yến Mạch<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gao-dau-do-kho/gao-gao-nep" target="_blank" rel="noopener noreferrer">Gạo - Gạo nếp<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gao-dau-do-kho/gao-tam" target="_blank" rel="noopener noreferrer">Gạo Tấm<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/gao-dau-do-kho/rong-bien-nam-mang-kho" target="_blank" rel="noopener noreferrer">Rong Biển - Nấm - Măng Khô<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-13.png" alt="" width="512" height="512" loading="lazy"><span>Ngũ Cốc Bánh Kẹo</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/ngu-coc-banh-keo" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Ngũ Cốc Bánh Kẹo<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/ngu-coc-banh-keo/banh-keo" target="_blank" rel="noopener noreferrer">Bánh - Kẹo<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ngu-coc-banh-keo/keo-cac-loai" target="_blank" rel="noopener noreferrer">Kẹo Các Loại<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ngu-coc-banh-keo/snacks-hat" target="_blank" rel="noopener noreferrer">Snacks - Hạt<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ngu-coc-banh-keo/bo-mut" target="_blank" rel="noopener noreferrer">Bơ - Mứt<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ngu-coc-banh-keo/banh-cac-loai" target="_blank" rel="noopener noreferrer">Bánh Các Loại<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/ngu-coc-banh-keo/ngu-coc-an-sang" target="_blank" rel="noopener noreferrer">Ngũ Cốc - Ăn Sáng<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-14.png" alt="" width="512" height="512" loading="lazy"><span>Bia Rượu Giải Khát</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/bia-ruou-giai-khat" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Bia Rượu Giải Khát<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/bia-ruou-giai-khat/bia" target="_blank" rel="noopener noreferrer">Bia<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/bia-ruou-giai-khat/nuoc-suoi-nuoc-tinh-khiet" target="_blank" rel="noopener noreferrer">Nước Suối - Nước Tinh Khiết<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/bia-ruou-giai-khat/nuoc-giai-khat" target="_blank" rel="noopener noreferrer">Nước Giải Khát<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/bia-ruou-giai-khat/nuoc-khong-ga" target="_blank" rel="noopener noreferrer">Nước Không Ga<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/bia-ruou-giai-khat/nuoc-co-ga" target="_blank" rel="noopener noreferrer">Nước Có Ga<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/bia-ruou-giai-khat/ruou" target="_blank" rel="noopener noreferrer">Rượu<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-15.png" alt="" width="1189" height="1189" loading="lazy"><span>Trà Cà Phê</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/tra-ca-phe" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Trà Cà Phê<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/tra-ca-phe/tra" target="_blank" rel="noopener noreferrer">Trà<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/tra-ca-phe/ca-phe" target="_blank" rel="noopener noreferrer">Cà Phê<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/tra-ca-phe/thuc-uong-dinh-duong" target="_blank" rel="noopener noreferrer">Thức Uống Dinh Dưỡng<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-16.png" alt="" width="1189" height="1189" loading="lazy"><span>Chăm Sóc Cá Nhân &amp; Mỹ Phẩm</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/cosmetics-perfumes" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Chăm Sóc Cá Nhân &amp; Mỹ Phẩm<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/cosmetics-perfumes/trang-diem" target="_blank" rel="noopener noreferrer">Trang Điểm<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/cosmetics-perfumes/cham-soc-toc" target="_blank" rel="noopener noreferrer">Chăm Sóc Tóc<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/cosmetics-perfumes/cham-soc-co-the" target="_blank" rel="noopener noreferrer">Chăm Sóc Cơ Thể<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/cosmetics-perfumes/cham-soc-rang-mieng" target="_blank" rel="noopener noreferrer">Chăm Sóc Răng Miệng<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+            <li><details class="category-group"><summary><img src="assets/chrome/category-17.png" alt="" width="1189" height="1189" loading="lazy"><span>Đồ Gia Dụng</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary><div class="category-group__content"><a href="https://menaselect.com/do-gia-dung" target="_blank" rel="noopener noreferrer" class="category-all">Xem tất cả Đồ Gia Dụng<span class="sr-only"> (mở thẻ mới)</span></a><ul><li><a href="https://menaselect.com/do-gia-dung/gia-dung-nha-bep" target="_blank" rel="noopener noreferrer">Gia Dụng - Nhà Bếp<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/do-gia-dung/giat-xa" target="_blank" rel="noopener noreferrer">Giặt - Xả<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/do-gia-dung/ve-sinh-nha-cua" target="_blank" rel="noopener noreferrer">Vệ Sinh Nhà Cửa<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/do-gia-dung/khan-giay" target="_blank" rel="noopener noreferrer">Khăn Giấy<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></div></details></li>
+          </ul></div>
+        </details>
+        <div class="navigation-links"><a href="https://menaselect.com/uu-dai" target="_blank" rel="noopener noreferrer" class="nav-pill"><img src="assets/chrome/nav-01.png" alt="" width="36" height="36" loading="lazy"><span>Ưu đãi</span><span class="sr-only"> (mở thẻ mới)</span></a>
+          <a href="https://menaselect.com/fresh-edit" target="_blank" rel="noopener noreferrer" class="nav-pill"><img src="assets/chrome/nav-02.png" alt="" width="36" height="36" loading="lazy"><span>Nấu gì hôm nay</span><span class="sr-only"> (mở thẻ mới)</span></a>
+          <a href="https://menaselect.com/mena-bebe" target="_blank" rel="noopener noreferrer" class="nav-pill"><img src="assets/chrome/nav-03.png" alt="" width="36" height="36" loading="lazy"><span>Mena Bébé</span><span class="sr-only"> (mở thẻ mới)</span></a>
+          <a href="https://menaselect.com/cosmetics-perfumes" target="_blank" rel="noopener noreferrer" class="nav-pill"><img src="assets/chrome/nav-04.png" alt="" width="36" height="36" loading="lazy"><span>Cosmetics &amp; Perfumes</span><span class="sr-only"> (mở thẻ mới)</span></a>
+          <a href="https://menaselect.com/he-thong-sieu-thi" target="_blank" rel="noopener noreferrer" class="nav-pill"><img src="assets/chrome/nav-05.png" alt="" width="160" height="136" loading="lazy"><span>Hệ thống siêu thị</span><span class="sr-only"> (mở thẻ mới)</span></a>
+          <a href="https://menaselect.com/blog" target="_blank" rel="noopener noreferrer" class="nav-pill"><img src="assets/chrome/nav-06.png" alt="" width="32" height="32" loading="lazy"><span>Blog</span><span class="sr-only"> (mở thẻ mới)</span></a></div>
+      </div>
+    </nav>
   </header>
+
 
   <main id="noi-dung" class="container">
     <nav class="breadcrumbs" aria-label="Đường dẫn danh mục">
       <ol>
         <li><a href="https://menaselect.com/" target="_blank" rel="noopener noreferrer">Trang chủ <span class="sr-only">(mở thẻ mới)</span></a></li>
-        <li><a href="https://menaselect.com/thit-trung-hai-san/ca-thuy-hai-san-tuoi" target="_blank" rel="noopener noreferrer">Hải sản <span class="sr-only">(mở thẻ mới)</span></a></li>
-        <li aria-current="page">Cá phèn fillet</li>
+        <li><a href="https://menaselect.com/thit-trung-hai-san" target="_blank" rel="noopener noreferrer">Thịt Trứng Hải Sản <span class="sr-only">(mở thẻ mới)</span></a></li>
+        <li><a href="https://menaselect.com/thit-trung-hai-san/ca-thuy-hai-san-tuoi" target="_blank" rel="noopener noreferrer">Cá - Thủy, Hải Sản Tươi <span class="sr-only">(mở thẻ mới)</span></a></li>
+        <li aria-current="page">Cá phèn Hải Nam fillet còn da gói 500g</li>
       </ol>
     </nav>
 
@@ -64,8 +101,8 @@
       
       <div class="product-hero">
         <header class="product-heading">
-          <p class="eyebrow">Hải Nam Foods <span aria-hidden="true">/</span> Hải sản</p>
-          <h1 id="ten-san-pham">Cá phèn Hải Nam fillet còn da size 20–40 gói 500g</h1>
+          <p class="eyebrow">Hải Nam Foods</p>
+          <h1 id="ten-san-pham">Cá phèn Hải Nam fillet còn da size 20-40 gói 500g</h1>
         </header>
 
         <div class="product-gallery">
@@ -87,20 +124,20 @@
           </div>
         </div>
 
-        <div class="product-summary" id="mua-hang">
+        <div class="product-summary">
           <dl class="quick-facts">
             <div><dt>Quy cách</dt><dd>Gói 500g</dd></div>
             <div><dt>Nguồn gốc</dt><dd>Việt Nam</dd></div>
           </dl>
 
-          <div class="price-panel" aria-label="Giá sản phẩm">
+          <div class="price-panel" id="mua-hang" tabindex="-1" aria-label="Khu vực mua hàng">
             <p class="price-panel__label">Giá bán</p>
             <div class="price-row">
               <strong class="current-price">225.000<span>₫</span></strong>
               <span class="discount-badge">Giảm 14%</span>
             </div>
             <p class="old-price"><span>Giá niêm yết</span> <del>262.000 ₫</del></p>
-            <p class="tax-note">Đã bao gồm VAT · Chưa gồm phí vận chuyển</p>
+            <p class="tax-note"><strong>Lưu ý:</strong> Giá đã bao gồm VAT và chưa bao gồm phí vận chuyển.</p>
           </div>
 
           
@@ -112,28 +149,21 @@
               <h2 id="tieu-de-uu-dai">Ưu đãi &amp; quà tặng</h2>
               <p>Tiết kiệm <strong>37.000 ₫</strong> so với giá niêm yết.</p>
               <details class="offer__details">
-                <summary>Xem điều kiện áp dụng</summary>
-                <p>Giá trong trang là dữ liệu mẫu tại thời điểm khảo sát. Quà tặng kèm, nếu có, áp dụng theo chương trình được công bố trên <a href="https://menaselect.com/ca-phen-hai-nam-fillet-con-da-size-20-40-goi-500g" target="_blank" rel="noopener noreferrer">trang sản phẩm gốc <span class="sr-only">(mở thẻ mới)</span></a>.</p>
+                <summary>Xem chương trình ưu đãi</summary>
+                <p>Xem điều kiện và các chương trình hiện có tại <a href="https://menaselect.com/uu-dai" target="_blank" rel="noopener noreferrer">Mena Select<span class="sr-only"> (mở thẻ mới)</span></a>.</p>
               </details>
             </div>
           </aside>
 
-          <form class="purchase-form" action="#thong-bao-mau" method="get" aria-describedby="ghi-chu-thao-tac">
+          <div class="purchase-form" role="group" aria-label="Chọn số lượng và thêm vào giỏ">
             <div class="quantity-field">
               <label for="so-luong">Số lượng</label>
               <input id="so-luong" name="so-luong" type="number" min="1" max="99" step="1" value="1" required inputmode="numeric">
             </div>
-            <button class="button button--primary" type="submit">
+            <button class="button button--primary" type="button" popovertarget="thong-bao-gio-hang">
               <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>
               Thêm vào giỏ
             </button>
-          </form>
-          <p class="interaction-note" id="ghi-chu-thao-tac">Nút mua minh họa cho bài tập HTML/CSS.</p>
-
-          <div id="thong-bao-mau" class="demo-notice" role="status" tabindex="-1">
-            <strong>Đây là thao tác minh họa.</strong>
-            <p>Sản phẩm chưa được lưu vào giỏ và chưa có đơn hàng nào được tạo.</p>
-            <a href="#mua-hang">Trở lại thông tin mua hàng</a>
           </div>
 
           <div class="policy-links" aria-label="Chính sách liên quan">
@@ -173,7 +203,7 @@
               <div><dt>Khối lượng</dt><dd>500g</dd></div>
               <div><dt>Đơn vị bán</dt><dd>Gói</dd></div>
               <div><dt>Dạng sản phẩm</dt><dd>Fillet còn da</dd></div>
-              <div><dt>Size</dt><dd>20–40</dd></div>
+              <div><dt>Size</dt><dd>20-40</dd></div>
             </dl>
           </section>
 
@@ -187,7 +217,7 @@
               <div><h3 id="tieu-de-bao-quan">Bảo quản</h3><p>Giữ trong ngăn đông tủ lạnh ở nhiệt độ −18°C.</p></div>
             </section>
           </div>
-          <p class="description-footnote">Thông tin tham khảo từ trang sản phẩm Mena Select. Kiểm tra nhãn trên bao bì khi sử dụng.</p>
+          <p class="description-price-note"><strong>Lưu ý:</strong> Giá đã bao gồm VAT và chưa bao gồm phí vận chuyển.</p>
         </div>
       </section>
     </article>
@@ -200,13 +230,12 @@
         <p>Khám phá thêm các lựa chọn hải sản từ Mena Select.</p>
         <a class="button button--light" href="#san-pham-lien-quan">Xem gợi ý bên dưới <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
       </div>
-      <div class="inspiration-banner__art" aria-hidden="true"><svg><use href="#icon-fish"/></svg><span>CHỌN VỊ NGON<br>CHO BỮA ĂN NHÀ</span></div>
+      <figure class="inspiration-banner__photo"><img src="assets/inspiration-seafood.png" alt="Phi lê cá hồi tươi cùng chanh, tiêu và các loại gia vị" width="1458" height="729" loading="lazy"></figure>
     </aside>
 
     <section id="san-pham-lien-quan" class="related-products section-space" aria-labelledby="tieu-de-lien-quan">
       <header class="section-heading">
         <div><p class="eyebrow">Thêm lựa chọn cho bạn</p><h2 id="tieu-de-lien-quan">Sản phẩm liên quan</h2></div>
-        <span class="section-caption">4 sản phẩm tham khảo</span>
       </header>
       <div class="product-grid">
         <article class="product-card product-card--ca-hoi" aria-labelledby="ten-ca-hoi">
@@ -254,16 +283,44 @@
           </div>
         </article>
       </div>
-      <p class="catalog-note">Giá mẫu ghi nhận ngày 20/10/2026. Nút “Xem chi tiết” mở trang Mena Select trong thẻ mới.</p>
     </section>
   </main>
 
+  <div id="thong-bao-gio-hang" class="cart-popover" popover="auto" role="dialog" aria-labelledby="tieu-de-gio-hang" aria-describedby="noi-dung-gio-hang">
+    <button class="popover-close" type="button" popovertarget="thong-bao-gio-hang" popovertargetaction="hide" aria-label="Đóng thông báo"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+    <h2 id="tieu-de-gio-hang">Tiếp tục mua sắm</h2>
+    <p id="noi-dung-gio-hang">Sản phẩm chưa được thêm vào giỏ. Bạn có thể tiếp tục chọn mua trên Mena Select.</p>
+    <a class="button button--primary" href="https://menaselect.com/ca-phen-hai-nam-fillet-con-da-size-20-40-goi-500g" target="_blank" rel="noopener noreferrer">Mua tại Mena Select<span class="sr-only"> (mở thẻ mới)</span><svg class="icon icon--small" aria-hidden="true"><use href="#icon-external"/></svg></a>
+  </div>
+
   <footer class="site-footer section-space">
-    <div class="container site-footer__inner">
-      <div><img src="assets/mena-select-logo.png" alt="Mena Select" width="346" height="80" loading="lazy"><p>Bài tập cá nhân · Nguyễn Văn Trường</p></div>
-      <p class="site-footer__note">Bản thiết kế HTML/CSS phục vụ học tập.<br>Thông tin, hình ảnh tham khảo từ Mena Select.</p>
+    <div class="container footer-grid">
+      <section class="footer-company" aria-labelledby="ten-cong-ty">
+        <img src="assets/chrome/footer-mena_select_logo.png" alt="Mena Select" width="414" height="96" class="footer-logo" loading="lazy">
+        <h2 id="ten-cong-ty">CÔNG TY TNHH MENAS</h2>
+        <p><strong>Địa chỉ:</strong> Tầng 7, số 25Bis Nguyễn Thị Minh Khai, Phường Sài Gòn, TP. HCM</p>
+        <p><strong>Địa chỉ liên hệ:</strong> Tầng 11, Tòa nhà Abacus, 58 Nguyễn Đình Chiểu, Phường Tân Định, TP.HCM</p>
+        <p><strong>Email:</strong> <a href="mailto:customercare@menasvietnam.com">customercare@menasvietnam.com</a><br><strong>Hotline:</strong> <a href="tel:1800255668">1800 255 668</a></p>
+        <p class="company-registration">Số GCNĐKDN: 0316333076 do Sở KHĐT TP.HCM cấp ngày 16/06/2020</p>
+      </section>
+      <section class="footer-column"><h2>Về chúng tôi</h2><ul><li><a href="https://menaselect.com/ve-chung-toi" target="_blank" rel="noopener noreferrer">Giới thiệu<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/he-thong-sieu-thi" target="_blank" rel="noopener noreferrer">Hệ thống siêu thị<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/blog" target="_blank" rel="noopener noreferrer">Blog<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></section>
+      <section class="footer-column"><h2>Chính sách</h2><ul><li><a href="https://menaselect.com/privacy_policies_page" target="_blank" rel="noopener noreferrer">Chính sách bảo mật<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/terms-conditions-transaction-page" target="_blank" rel="noopener noreferrer">Điều khoản sử dụng<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/purchase_shipping_policy_page" target="_blank" rel="noopener noreferrer">Chính sách mua hàng<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/return_and_xchange_policy" target="_blank" rel="noopener noreferrer">Chính sách đổi trả<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/payment_policy_page" target="_blank" rel="noopener noreferrer">Chính sách thanh toán<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/chinh-sach-thanh-vien" target="_blank" rel="noopener noreferrer">Chính sách thành viên<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/dieu-khoan-dieu-kien-chuong-trinh-uu-dai-ra-mat-mena-select" target="_blank" rel="noopener noreferrer">Chính sách chương trình Ưu đãi ra mắt<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></section>
+      <section class="footer-column"><h2>Mua sắm</h2><ul><li><a href="https://menaselect.com/huong-dan-mua-hang-online" target="_blank" rel="noopener noreferrer">Hướng dẫn mua hàng<span class="sr-only"> (mở thẻ mới)</span></a></li><li><a href="https://menaselect.com/tai-app" target="_blank" rel="noopener noreferrer">Tải App Mena Select<span class="sr-only"> (mở thẻ mới)</span></a></li></ul></section>
+      <section class="footer-connect" aria-labelledby="ket-noi">
+        <h2 id="ket-noi">Kết nối với Mena Select</h2>
+        <div class="social-links"><a href="https://www.facebook.com/menagourmetmarket" target="_blank" rel="noopener noreferrer"><img src="assets/chrome/footer-facebook.png" alt="Facebook" width="128" height="128" loading="lazy"><span class="sr-only"> (mở thẻ mới)</span></a><span><img src="assets/chrome/footer-instagram_1_.png" alt="Instagram" width="128" height="128" loading="lazy"></span><span><img src="assets/chrome/footer-instagram_1_.png" alt="Instagram" width="128" height="128" loading="lazy"></span><span><img src="assets/chrome/footer-youtube_1_.png" alt="YouTube" width="128" height="128" loading="lazy"></span><a href="https://zalo.me/2597945797616688670" target="_blank" rel="noopener noreferrer"><img src="assets/chrome/footer-zalo_1_.png" alt="Zalo" width="128" height="128" loading="lazy"><span class="sr-only"> (mở thẻ mới)</span></a><a href="https://www.tiktok.com/@menagourmet" target="_blank" rel="noopener noreferrer"><img src="assets/chrome/footer-tiktok_1_.png" alt="TikTok" width="128" height="128" loading="lazy"><span class="sr-only"> (mở thẻ mới)</span></a></div>
+        <h2 class="payment-heading">Kênh thanh toán</h2>
+        <div class="payment-logos"><img src="assets/chrome/footer-visa_1_.png" alt="Visa" width="186" height="128" loading="lazy"><img src="assets/chrome/footer-mastercard_1_.png" alt="Mastercard" width="186" height="128" loading="lazy"><img src="assets/chrome/footer-jcb_1_.png" alt="JCB" width="186" height="128" loading="lazy"></div>
+        <div class="app-badges"><a href="https://apps.apple.com/us/app/mena-select/id6756092888" target="_blank" rel="noopener noreferrer"><img src="assets/chrome/footer-app-store_1.png" alt="Tải trên App Store" width="201" height="60" loading="lazy"><span class="sr-only"> (mở thẻ mới)</span></a><a href="https://play.google.com/store/apps/details?id=com.menas.market" target="_blank" rel="noopener noreferrer"><img src="assets/chrome/footer-gg-play_1.png" alt="Tải trên Google Play" width="201" height="60" loading="lazy"><span class="sr-only"> (mở thẻ mới)</span></a></div>
+        <div class="certification"><a href="http://online.gov.vn/Home/WebDetails/140649" target="_blank" rel="noopener noreferrer"><img src="assets/chrome/footer-thong-bao-bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" width="315" height="117" loading="lazy"><span class="sr-only"> (mở thẻ mới)</span></a></div>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Menas Group</p>
       <a class="text-link" href="#dau-trang">Về đầu trang <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
     </div>
+    <p class="author-credit">Thiết kế giao diện: Nguyễn Văn Trường</p>
   </footer>
+
 </body>
 </html>
