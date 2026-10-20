@@ -20,7 +20,7 @@ Ngày ghi nhận: **20/10/2026**. Đây là dữ liệu tham khảo cho giao di�
 
 - Logo: [Mena Select](https://menaselect.com/media/logo/websites/1/MenaSelect_Logo.png).
 
-Các file PNG được giữ nguyên byte khi tải về. Trang chỉ điều chỉnh vùng hiển thị bằng CSS; bấm ảnh chính để xem file đầy đủ.
+Các file PNG được giữ nguyên byte khi tải về. Trang chỉ điều chỉnh vùng hiển thị bằng CSS; bấm ảnh chính để xem khung phóng lớn trên trang.
 
 ## Phân biệt nội dung gốc và nội dung thiết kế
 
@@ -62,7 +62,7 @@ Các file PNG được giữ nguyên byte khi tải về. Trang chỉ điều ch
 
 - Nguồn chính thức: https://hainamfoods.vn/san-pham/ca-phen-fillet-con-da/
 - Mena Select được khảo sát có một ảnh gallery. Hai ảnh sau được bổ sung từ nhà sản xuất, không phải ảnh đã quan sát trên gallery gốc.
-- Ảnh món ăn được giữ nguyên tệp. CSS có thể cắt phần mép để lấp khung; bấm ảnh lớn để xem toàn bộ nguyên bản.
+- Ảnh món ăn được giữ nguyên tệp. CSS căn từng vùng ảnh để tránh logo góc; khung phóng lớn tiếp tục dùng vùng ảnh đã căn. Ảnh nguồn đầy đủ vẫn nằm trong assets.
 - Cá phèn xiên rau củ: `assets/ca-phen-xien-rau-cu.jpg`; ảnh nguồn: https://hainamfoods.vn/wp-content/uploads/2020/05/C%C3%A1-ph%C3%A8n-xi%C3%AAn-que-rau-c%E1%BB%A7-scaled.jpg
 - Cá phèn nướng: `assets/ca-phen-nuong.jpg`; ảnh nguồn: https://hainamfoods.vn/wp-content/uploads/2020/05/C%C3%A1-ph%C3%A8n-n%C6%B0%E1%BB%9Bng-da.jpg
 

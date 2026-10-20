@@ -74,10 +74,10 @@ Sinh viên yêu cầu giữ header/footer/danh mục, làm rõ VAT và phí vậ
 
 
 ## 4. Kết quả AI đề xuất
-Bản lưu bước 5: Mô tả bắt đầu trực tiếp bằng nội dung sản phẩm; bỏ nhãn phụ và thu gọn khoảng trống.
+Bản lưu bước 6: Có nút chia sẻ cạnh tên; thương hiệu được giữ trong bảng thông tin thay vì đặt phía trên tên.
 
 ## 5. Kiểm tra và điều chỉnh
-Bỏ dòng Tìm hiểu trước khi chọn và các nhãn dẫn phụ; bỏ tiêu đề trang trí trong mô tả; giảm margin, padding và khoảng cách giữa các khối.
+Thêm nút Chia sẻ cạnh tên sản phẩm, hộp liên kết sản phẩm và lựa chọn Facebook/Email; bỏ dòng thương hiệu phía trên tên.
 Đây là bản đã lưu trong quá trình chỉnh sửa. Kết quả kiểm tra của bản hoàn thiện được bổ sung ở lượt cuối; không dùng kết quả đó để khẳng định mọi bản cũ đã đạt.
 
 ## 6. Phần tôi hiểu và có thể giải thích
