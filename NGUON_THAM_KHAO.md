@@ -57,3 +57,17 @@ Các file PNG được giữ nguyên byte khi tải về. Trang chỉ điều ch
 
 - MDN, thuộc tính popover: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/popover
 - Các chức năng đóng/mở dùng HTML native, không có JavaScript trong dự án.
+
+## Hai ảnh bổ sung cho gallery
+
+- Nguồn chính thức: https://hainamfoods.vn/san-pham/ca-phen-fillet-con-da/
+- Mena Select được khảo sát có một ảnh gallery. Hai ảnh sau được bổ sung từ nhà sản xuất, không phải ảnh đã quan sát trên gallery gốc.
+- Ảnh món ăn được giữ nguyên tệp. CSS có thể cắt phần mép để lấp khung; bấm ảnh lớn để xem toàn bộ nguyên bản.
+- Cá phèn xiên rau củ: `assets/ca-phen-xien-rau-cu.jpg`; ảnh nguồn: https://hainamfoods.vn/wp-content/uploads/2020/05/C%C3%A1-ph%C3%A8n-xi%C3%AAn-que-rau-c%E1%BB%A7-scaled.jpg
+- Cá phèn nướng: `assets/ca-phen-nuong.jpg`; ảnh nguồn: https://hainamfoods.vn/wp-content/uploads/2020/05/C%C3%A1-ph%C3%A8n-n%C6%B0%E1%BB%9Bng-da.jpg
+
+## Vai trò Base / Small / Thumbnail
+
+- Adobe Commerce, quản lý ảnh sản phẩm: https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image
+- Base dùng trên trang chi tiết; Small dùng trong danh mục và kết quả tìm kiếm; Thumbnail dùng trong gallery thu nhỏ, giỏ hàng và một số khối khác.
+- Một ảnh có thể được gán nhiều vai trò; các vai trò không yêu cầu ba góc chụp khác nhau. Dự án HTML/CSS không có chức năng cấu hình ảnh quản trị.

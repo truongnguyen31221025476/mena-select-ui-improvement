@@ -74,10 +74,10 @@ Sinh viên yêu cầu giữ header/footer/danh mục, làm rõ VAT và phí vậ
 
 
 ## 4. Kết quả AI đề xuất
-Bản lưu bước 2: Header/footer/danh mục theo nguồn Mena Select; banner có ảnh; thông tin VAT và phí vận chuyển rõ hơn.
+Bản lưu bước 3: Gallery có ba ảnh và thumbnail; thao tác xem ảnh ở bản này còn mở tệp ảnh nguồn.
 
 ## 5. Kiểm tra và điều chỉnh
-Khôi phục header, footer và danh mục; làm rõ VAT, phí vận chuyển và liên kết quay lại mua hàng; thêm ảnh banner và thu gọn khoảng cách.
+Bổ sung ảnh cá phèn xiên rau củ và cá phèn nướng, dải thumbnail và chú thích từng ảnh; chuẩn hóa nhãn danh mục.
 Đây là bản đã lưu trong quá trình chỉnh sửa. Kết quả kiểm tra của bản hoàn thiện được bổ sung ở lượt cuối; không dùng kết quả đó để khẳng định mọi bản cũ đã đạt.
 
 ## 6. Phần tôi hiểu và có thể giải thích
