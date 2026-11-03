@@ -1,0 +1,78 @@
+/* Bài thực hành Buổi 2: selector, Box Model, Flexbox, Grid và tương tác */
+#san-pham-lien-quan .product-card {
+  height: 100%;
+  border-radius: 14px;
+}
+
+#san-pham-lien-quan .product-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 6px;
+  padding: 16px 16px 18px;
+}
+
+#san-pham-lien-quan .product-card__category {
+  margin-bottom: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#san-pham-lien-quan .product-card h3 {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+#san-pham-lien-quan .product-card__price {
+  margin-top: auto;
+  padding-top: 14px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+#san-pham-lien-quan .product-card__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid #c5d2ab;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#san-pham-lien-quan .product-card__action:hover {
+  background-color: #e0eacb;
+  border-color: var(--color-brand);
+}
+
+#san-pham-lien-quan .product-card__action:focus-visible {
+  outline: 3px solid #236caf;
+  outline-offset: 2px;
+}
+
+#san-pham-lien-quan .product-card__photo:focus-visible {
+  outline: 3px solid #236caf;
+  outline-offset: -4px;
+}
+
+#san-pham-lien-quan .product-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  #san-pham-lien-quan .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1040px) {
+  #san-pham-lien-quan .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
